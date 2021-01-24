@@ -164,11 +164,7 @@ impl Parser {
     }
 
     fn syntax_to_parser_err(syntax_err: SyntaxError) -> ParserError {
-        let why = format!(
-            "syntax error input - unexpected character '{}' at {}",
-            syntax_err.what,
-            syntax_err.pos
-        );
+        let why = format!("syntax error - unexpected character '{}'", syntax_err.what);
 
         ParserError { why, pos: syntax_err.pos }
     }
