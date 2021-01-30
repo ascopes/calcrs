@@ -1,4 +1,5 @@
 use std::io::{self, BufRead};
+use std::process;
 
 use calcrs::lex;
 use calcrs::parser;
