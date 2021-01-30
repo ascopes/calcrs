@@ -10,7 +10,7 @@ mod calcrs;
 
 fn parser_error(parser_error: ParserError) {
     println!("Parser Error: {} in input at {}", parser_error.why, parser_error.pos);
-    std::process::exit(1);
+    process::exit(1);
 }
 
 fn main() {
