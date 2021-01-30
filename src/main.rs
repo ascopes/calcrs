@@ -8,7 +8,7 @@ use crate::calcrs::parser::ParserError;
 mod calcrs;
 
 fn parser_error(parser_error: ParserError) {
-    println("Parser Error: {} in input at {}", parser_error.why, parser_error.pos);
+    println!("Parser Error: {} in input at {}", parser_error.why, parser_error.pos);
     sys::process::exit(1);
 }
 
